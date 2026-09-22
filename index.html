@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U.S. Marine Corps - Personnel & Disbursement Records</title>
+    <style>
+        :root {
+            --primary-color: #1b2a4a;
+            --accent-color: #c5a059;
+            --bg-color: #f4f6f9;
+            --text-color: #333333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            color: #d1d5db;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .detail-item {
+            background: #f9fafb;
+            padding: 1rem 1.25rem;
+            border-left: 4px solid var(--primary-color);
+            border-radius: 4px;
+        }
+
+        .detail-item.highlight {
+            border-left-color: var(--accent-color);
+            background: #fdfbf7;
+        }
+
+        .detail-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: #6b7280;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .detail-value {
+            font-size: 1.1rem;
+            color: #111827;
+            font-weight: 500;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .gallery-item {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 0.75rem 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #4b5563;
+            background: #f9fafb;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #111827;
+            color: #9ca3af;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>U.S. MARINE CORPS</h1>
+        <p>Official Personnel Record & Disbursement Documentation</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Service Member & Disbursement Information -->
+        <div class="card">
+            <h2>Service Member & Payment Profile</h2>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <div class="detail-label">Service Branch</div>
+                    <div class="detail-value">U.S. Marine Corps</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Rank & Name</div>
+                    <div class="detail-value">Staff Sergeant (E-6) Demetrius Peterson</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Fiancee</div>
+                    <div class="detail-value">Tammy McCollister</div>
+                </div>
+                <div class="detail-item highlight">
+                    <div class="detail-label">Disbursement Allocation</div>
+                    <div class="detail-value">$537,000</div>
+                </div>
+                <div class="detail-item highlight" style="grid-column: 1 / -1;">
+                    <div class="detail-label">Payment Recipient & Account Destination</div>
+                    <div class="detail-value">Tammy McCollister Bank Account</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photo Documentation Gallery -->
+        <div class="card">
+            <h2>Official Photographic Documentation</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="1000212236.jpg" alt="Staff Sergeant Demetrius Peterson - Service Dress">
+                    <div class="gallery-caption">Staff Sergeant Demetrius Peterson (Service Uniform)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1000212235.jpg" alt="Staff Sergeant Demetrius Peterson - Dress Uniform with White Cover">
+                    <div class="gallery-caption">Staff Sergeant Demetrius Peterson (Command/Embassy Background)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="1000212234.jpg" alt="Staff Sergeant Demetrius Peterson - Full Dress Uniform">
+                    <div class="gallery-caption">Staff Sergeant Demetrius Peterson (Field Deployment Setting)</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 U.S. Marine Corps Records Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
